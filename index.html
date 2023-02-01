@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js" integrity="sha384-oBqDVmMz9ATKxIep9tiCxS/Z9fNfEXiDAYTujMAeBAsjFuCZSmKbSSUnQlmh/jp3" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.min.js" integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/072e5df971.js" crossorigin="anonymous"></script>
+    <title>HTML5</title>
+</head>
+<body class="d-flex justify-content-center p-3">
+    <div class="container"> 
+        <form class="border rounded">
+        <nav class="p-2 border-bottom" style="background-color: rgba(220, 220, 220, 0.342);">
+            <h3>Payment form example</h3>
+        </nav>
+        <main class="p-3">
+            <div class="row">
+                <div class="col-12">
+                    <div class="alert alert-danger p-2 ps-3" role="alert">Some fields are missing</div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-5">
+                    <label for="NumberCard" class="form-label">Card #</label>
+                    <input class="form-control" type="text" placeholder="xxxxxxxxxxxxxxxx">
+                </div>
+                <div class="col-3">
+                    <Label for="NumberCVC" class="form-label">CVC #</Label>
+                    <input class="form-control" type="text" placeholder="0000">
+                </div>
+                <div class="col-4">
+                    <label for="Howmuchmoney" class="form-label">Amount</label>
+                    <input class="form-control" type="text" placeholder="Amount">
+                </div>
+                <div class="col-6">
+                    <label for="FirstName" class="form-label">First Name</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-6">
+                    <label for="LastName" class="form-label">Last Name</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-6">
+                    <label for="Nameofcity" class="form-label">City</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="Nameofstate" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Pick a state</option>
+                        <option>...</option>
+                      </select>
+                </div>
+                <div class="col-3">
+                    <label for="NumberofPostalCode" class="form-label">Postal Code</label>
+                    <input class="form-control" type="text">
+                </div>
+                <div class="col-3">
+                    <label for="NumberofPostalCode" class="form-label">We accept:</label>
+                    <div class="row border bg-secondary p-2 border rounded m-auto text-light">
+                        <div class="col-3 form-check m-auto">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <i class="fa-brands fa-cc-mastercard fa-xl"></i>
+                            </label>
+                        </div>
+                        <div class="col-3 form-check m-auto">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <i class="fa-brands fa-cc-visa fa-xl"></i>
+                            </label>
+                        </div>  
+                        <div class="col-3 form-check m-auto">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <i class="fa-brands fa-cc-diners-club fa-xl"></i>
+                            </label>
+                        </div> 
+                        <div class="col-3 form-check m-auto">
+                            <input class="form-check-input" type="radio" name="gridRadios" id="gridRadios1" value="option1" checked>
+                            <label class="form-check-label" for="gridRadios1">
+                                <i class="fa-brands fa-cc-amex fa-xl"></i>
+                            </label>
+                        </div>          
+                    </div>
+                </div>
+                <div class="col-6 offset-3">
+                    <label class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="form-text">Add any notes here.</div>
+                </div>
+            </div>
+        </main>
+        <footer class="p-2 d-flex justify-content-end border-top" style="background-color: ghostwhite;">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+            <button type="submit" class="btn btn-primary ms-2">Send</button>
+        </footer>
+        </form>
+    </div> 
+</body>
+</html>
